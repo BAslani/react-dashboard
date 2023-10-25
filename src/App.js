@@ -1,8 +1,17 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+// components
+import Home from "./pages/Home";
+import Error from "./pages/Error";
+
 function App() {
   return (
-    <h1>
-      Hello, dashboeard
-    </h1>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
