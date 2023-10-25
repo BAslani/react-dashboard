@@ -40,7 +40,7 @@ const ChartComponent = () => {
           seriesName: "Desktops",
           data: [
             {
-              value: "21"
+              value: "27"
             },
             {
               value: "10"
@@ -59,6 +59,9 @@ const ChartComponent = () => {
             },
             {
               value: "38"
+            },
+            {
+              value: "20"
             },
             {
               value: "20"
@@ -94,13 +97,16 @@ const ChartComponent = () => {
               value: "28"
             },
             {
-              value: "52"
+              value: "50"
             },
             {
               value: "25"
             },
             {
-              value: "50"
+              value: "33"
+            },
+            {
+              value: "33"
             },
             {
               value: "37"
@@ -130,7 +136,7 @@ const ChartComponent = () => {
               value: "21"
             },
             {
-              value: "38"
+              value: "35"
             },
             {
               value: "20"
@@ -140,6 +146,9 @@ const ChartComponent = () => {
             },
             {
               value: "33"
+            },
+            {
+              value: '35'
             }
           ]
         }

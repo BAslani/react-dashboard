@@ -1,13 +1,17 @@
 import React from 'react'
 import AnalysisChart from "../components/AnalysisChart"
 import styled from 'styled-components'
+import Promotion from './Promotion'
 
 const Data = () => {
     return <section>
-    <Wrapper className='section-center'>
-        <AnalysisChart />
-    </Wrapper>
-  </section>
+        <Wrapper className='section-center'>
+            <AnalysisChart />
+            <div>
+                <Promotion />
+            </div>
+        </Wrapper>
+    </section>
 }
 
 const Wrapper = styled.div`
@@ -16,12 +20,9 @@ display: grid;
 justify-items: center;
 gap: 2rem;
 @media (min-width: 800px) {
-    grid-template-columns: 1fr 1fr;
-}
-
-@media (min-width: 1200px) {
     grid-template-columns: 3fr 2fr;
 }
+
 
 div {
     width: 100% !important;
