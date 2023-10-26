@@ -5,6 +5,7 @@ import Promotion from './Promotion'
 import TopSelling from './TopSelling'
 import TopUsers from './TopUsers'
 import RecentActivity from './RecentActivity'
+import SocialSources from './SocialSources'
 
 const Data = () => {
     return <section>
@@ -18,6 +19,7 @@ const Data = () => {
                 <TopUsers />
                 <RecentActivity />
             </aside>
+            <SocialSources />
         </Wrapper>
     </section>
 }
@@ -29,7 +31,7 @@ justify-items: center;
 gap: 1rem;
 @media (min-width: 648px) {
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 2fr 1fr;
 }
 
 div {
