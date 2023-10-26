@@ -27,8 +27,8 @@ border-radius: var(--radius);
 padding: 1rem 2rem;
 background: var(--clr-white);
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
-margin-top: 1rem;
 margin-bottom: 1rem;
+height: 100%;
 
 header {
     h5 {

@@ -17,6 +17,7 @@ const Promotion = () => {
 const Wrapper = styled.article`
 background: #4099ff;
 width: 100%;
+height: 100%;
 padding: 2rem;
 display: grid;
 grid-template-columns: 1fr auto;

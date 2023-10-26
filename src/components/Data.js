@@ -10,16 +10,24 @@ import SocialSources from './SocialSources'
 const Data = () => {
     return <section>
         <Wrapper className='section-center'>
-            <AnalysisChart />
-            <aside className='aside1'>
+            <article className="analysis">
+                <AnalysisChart />
+            </article>
+            <article className="promotion">
                 <Promotion />
+            </article>
+            <article className="topSelling">
                 <TopSelling />
-            </aside>
-            <aside className='aside2'>
+            </article>
+            <article className="topUsers">
                 <TopUsers />
+            </article>
+            <article className="recentActivity">
                 <RecentActivity />
-            </aside>
-            <SocialSources />
+            </article>
+            <article className="socialSources">
+                <SocialSources />
+            </article>
         </Wrapper>
     </section>
 }
@@ -29,9 +37,35 @@ margin-top: 1rem;
 
 // justify-items: center;
 gap: 1rem;
-@media (min-width: 648px) {
+@media (min-width: 742px) {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+    "a a b"
+    "a a c"
+    "d e f"
+}
+
+.analysis {
+    grid-area: a;
+}
+.promotion {
+    grid-area: b;
+}
+
+.topSelling {
+    grid-area: c;
+}
+.topUsers {
+    grid-area: d;
+    margin-bottom: 1rem;
+}
+.recentActivity {
+    grid-area: e;
+    margin-bottom: 1rem;
+}
+.socialSources {
+    grid-area: f;
+    margin-bottom: 1rem;
 }
 
 div {
