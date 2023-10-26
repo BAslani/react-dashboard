@@ -5,7 +5,6 @@ import { CiSearch } from 'react-icons/ci'
 import { useGlobal } from '../context/context'
 import { TfiLayoutGrid2 } from 'react-icons/tfi'
 import { MdOutlineCopyAll, MdNotificationsNone } from 'react-icons/md'
-import { RiArrowDropDownLine } from 'react-icons/ri'
 import { AiOutlineSetting } from 'react-icons/ai'
 
 const Nav = () => {
@@ -45,8 +44,9 @@ const Nav = () => {
             </div>
           </li>
           <li>
-            username
-            <RiArrowDropDownLine className='options' />
+            <select name="sort" id="username">
+              <option value="Yearly">Username</option>
+            </select>
           </li>
           <li>
             <button className="options settings">
@@ -98,22 +98,23 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
   border: transparent;
   color: var(--clr-primary-5);
   cursor: pointer;
-  svg {
-    font-size: 2rem;
-  }
 }
 
-  button {
-    font-size: 1.25rem;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-  }
-
-  .notifications-container {
-    position: relative;
+button {
+  font-size: 1.25rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }
 
+.notifications-container {
+  position: relative;
+}
+
+#username {
+  background: transparent;
+  border: none;
+}
 .notification-count {
     position: absolute;
     top: -0.5rem;
