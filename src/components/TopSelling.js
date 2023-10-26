@@ -7,7 +7,7 @@ const TopSelling = () => {
             <div className="top-sale-text">
                 <h5>Top Selling Products</h5>
                 <div>
-                    <span>Sort By</span>
+                    <b>Sort By :</b>
                     <select name="sort" id="sort">
                         <option value="Yearly">Yearly</option>
                     </select>
@@ -107,6 +107,7 @@ li > p {
 
 .empty-bar {
     height: 0.4rem;
+    width: 100%;
     background: #dae2ec;
     border-radius: var(--radius);
     margin-left: 1rem;
@@ -114,7 +115,7 @@ li > p {
 }
 .filled {
     height: 0.4rem;
-    max-width: 53%;
+    max-width: 50%;
     border-radius: var(--radius);
     position: absolute;
 }

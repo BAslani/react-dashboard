@@ -3,15 +3,19 @@ import AnalysisChart from "../components/AnalysisChart"
 import styled from 'styled-components'
 import Promotion from './Promotion'
 import TopSelling from './TopSelling'
+import TopUsers from './TopUsers'
 
 const Data = () => {
     return <section>
         <Wrapper className='section-center'>
             <AnalysisChart />
-            <div className='aside'>
+            <aside className='aside'>
                 <Promotion />
                 <TopSelling />
-            </div>
+            </aside>
+            <aside>
+                <TopUsers />
+            </aside>
         </Wrapper>
     </section>
 }
