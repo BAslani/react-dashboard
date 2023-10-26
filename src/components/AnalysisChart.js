@@ -1,4 +1,3 @@
-// STEP 1 - Include Dependencies
 // Include react
 import React from "react";
 
@@ -21,7 +20,7 @@ const ChartComponent = () => {
   const chartConfigs = {
     type: "mscombi2D", // The chart type
     width: "100%", // Width of the chart
-    height: "400", // Height of the chart
+    height: "500", // Height of the chart
     dataFormat: "json", // Data type
     dataSource: {
       // Chart Configuration
@@ -29,7 +28,7 @@ const ChartComponent = () => {
         caption: "Sales Analytics",
         yAxisName: "Points",
         theme: "fusion",
-        plotSpacePercent:'75',
+        plotSpacePercent: '75',
         captionAlignment: 'left',
         drawAnchors: false,
 
@@ -196,6 +195,7 @@ const ChartComponent = () => {
     }
   };
   return <ReactFC {...chartConfigs} />
+
 }
 
 

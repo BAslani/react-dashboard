@@ -2,27 +2,29 @@ import React from 'react'
 import AnalysisChart from "../components/AnalysisChart"
 import styled from 'styled-components'
 import Promotion from './Promotion'
+import TopSelling from './TopSelling'
 
 const Data = () => {
     return <section>
         <Wrapper className='section-center'>
             <AnalysisChart />
-            <div>
+            <div className='aside'>
                 <Promotion />
+                <TopSelling />
             </div>
         </Wrapper>
     </section>
 }
 
 const Wrapper = styled.div`
-margin-top: 2rem;
-display: grid;
+margin-top: 1rem;
+
 justify-items: center;
-gap: 2rem;
-@media (min-width: 800px) {
+gap: 1rem;
+@media (min-width: 648px) {
+    display: grid;
     grid-template-columns: 3fr 2fr;
 }
-
 
 div {
     width: 100% !important;
@@ -30,9 +32,11 @@ div {
 .fusioncharts-container {
     width: 100% !important;
 }
-svg {
-    width: 100% !important;
-    border-radius: var(--radius) !important;
+
+.aside {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr;
 }
 `
 

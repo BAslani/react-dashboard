@@ -31,12 +31,14 @@ const Item = ({ icon, label, value, color, stat }) => {
 }
 
 const Wrapper = styled.section`
-margin-top: 2rem;
+margin-top: 1rem;
 display: grid;
 grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 gap: 1rem 2rem;
 @media (min-width: 992px) {
 grid-template-columns: repeat(4, 1fr);
+
+
 }
 .item {
     border-radius: var(--radius);
@@ -44,6 +46,7 @@ grid-template-columns: repeat(4, 1fr);
     background: var(--clr-white);
     display: grid;
     grid-template-rows: auto 1fr;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
 .item > div {
