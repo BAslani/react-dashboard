@@ -27,7 +27,7 @@ const Data = () => {
 const Wrapper = styled.div`
 margin-top: 1rem;
 
-justify-items: center;
+// justify-items: center;
 gap: 1rem;
 @media (min-width: 648px) {
     display: grid;
@@ -41,17 +41,17 @@ div {
     width: 100% !important;
 }
 
-.aside1 {
-    height: 100%;
-    display: grid;
-    grid-template-rows: auto 1fr;
-}
-.aside2 {
-    height: 100%;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    column-gap: 1rem;
-}
+// .aside1 {
+//     height: 100%;
+//     display: grid;
+//     grid-template-rows: auto 1fr;
+// }
+// .aside2 {
+//     height: 100%;
+//     display: grid;
+//     grid-template-columns: auto 1fr;
+//     column-gap: 1rem;
+// }
 `
 
 export default Data

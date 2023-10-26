@@ -58,6 +58,8 @@ const Wrapper = styled.article`
 background: #fff;
 padding: 2rem;
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+margin-top: 1rem;
+margin-bottom: 1rem;
 
 .top-sale-text {
     display: grid;

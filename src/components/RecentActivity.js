@@ -6,18 +6,18 @@ const RecentActivity = () => {
     return (
         <Wrapper>
             <header>
-                <h5>random activity</h5>
+                <h5>recent activity</h5>
                 <select name="sort" id="sort-activity">
                     <option value="Yearly">All Members</option>
                 </select>
             </header>
-            <darticle className="activity-info">
+            <article className="activity-info">
                 <BiCircle />
                 <div className="text">
                     <p>Today 12:20 pm</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ex.</p>
                 </div>
-            </darticle>
+            </article>
             <article className="activity-info">
                 <BiCircle />
                 <div className="text">
@@ -34,6 +34,8 @@ border-radius: var(--radius);
 padding: 1rem 2rem;
 background: var(--clr-white);
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+margin-top: 1rem;
+margin-bottom: 1rem;
 
 header {
     h5 {
