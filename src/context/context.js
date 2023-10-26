@@ -6,6 +6,7 @@ const dashboardContext = React.createContext();
 
 const DashboardProvider = ({ children }) => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false)
+    // mockData for statistics
     const items = [
         {
             id: 1,

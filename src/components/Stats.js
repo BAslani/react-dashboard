@@ -13,6 +13,7 @@ const Stats = () => {
     </section>;
 };
 
+// iterating through mockData and displaying the stats
 const Item = ({ icon, label, value, color, stat }) => {
     return (
         <article className="item">

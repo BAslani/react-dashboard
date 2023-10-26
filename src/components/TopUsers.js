@@ -3,6 +3,9 @@ import styled from 'styled-components'
 import { MdLocationPin } from 'react-icons/md'
 
 const TopUsers = () => {
+  // I used random user enerator and took 2 of the results
+  // in real scenario this would have been an API call with fetch function
+  // but for simplicity I chose this way
   const users = [
     {
       "gender": "female",
